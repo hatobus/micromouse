@@ -1,0 +1,12 @@
+======================
+ダウンロードページURL
+======================
+
+
+(1)ルネサスダウンロードページ（登録が必要）
+
+【無償評価版】統合開発環境 CS+ for CC V4.01.00/CS+ Package(一括ダウンロード版)
+https://www.renesas.com/ja-jp/software/D4000106.html
+
+(2)TeraTermダウンロードページ
+https://osdn.jp/projects/ttssh2/releases/
