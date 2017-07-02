@@ -1,0 +1,96 @@
+Renesas Optimizing Linker (W2.06.00 )             02-Jul-2017 09:43:37
+
+*** Options ***
+
+-subcommand=DefaultBuild\PiCoClassic3.clnk
+-library=DefaultBuild\PiCoClassic3.lib
+-input=DefaultBuild\init.obj
+-input=DefaultBuild\interrupt.obj
+-input=DefaultBuild\intprg.obj
+-input=DefaultBuild\misc.obj
+-input=DefaultBuild\PiCoClassic3.obj
+-input=DefaultBuild\resetprg.obj
+-input=DefaultBuild\run.obj
+-input=DefaultBuild\sbrk.obj
+-input=DefaultBuild\search.obj
+-input=DefaultBuild\vecttbl.obj
+-input=DefaultBuild\dbsct.obj
+-input=DefaultBuild\demo.obj
+-input=DefaultBuild\fast.obj
+-input=DefaultBuild\glob_var.obj
+-input=DefaultBuild\adjust.obj
+-input=DefaultBuild\usb_int.obj
+-input=DefaultBuild\usb.obj
+-noprelink
+-output=DefaultBuild\PiCoClassic3.abs
+-list=DefaultBuild\PiCoClassic3.map
+-nooptimize
+-start=B_1,R_1,B_2,R_2,B,R,SU,SI/04,PResetPRG/0FFFC0000,C_1,C_2,C,C$DSEC,C$BSEC,C$INIT,C$VTBL,C$VECT,D_1,D_2,D,P,PIntPRG,W_1,W_2,W,L/0FFFC0100,FIXEDVECT/0FFFFFFD0
+-rom=D=R,D_1=R_1,D_2=R_2
+-nologo
+-end
+
+*** Error information ***
+
+*** Mapping List ***
+
+SECTION                            START      END         SIZE   ALIGN
+
+B_1
+                                  00000004  000003cb       3c8   1
+R_1
+                                  000003cc  000004ea       11f   1
+B_2
+                                  000004ec  000007f5       30a   2
+R_2
+                                  000007f6  0000082f        3a   2
+B
+                                  00000830  00001b8f      1360   4
+R
+                                  00001b90  00001c07        78   4
+SU
+                                  00001c08  00001d07       100   4
+SI
+                                  00001d08  00002007       300   4
+PResetPRG
+                                  fffc0000  fffc0030        31   1
+C_1
+                                  fffc0100  fffc0100         0   1
+C_2
+                                  fffc0100  fffc0100         0   1
+C
+                                  fffc0100  fffc0353       254   4
+C$DSEC
+                                  fffc0354  fffc0377        24   4
+C$BSEC
+                                  fffc0378  fffc038f        18   4
+C$INIT
+                                  fffc0390  fffc0390         0   1
+C$VTBL
+                                  fffc0390  fffc0390         0   1
+C$VECT
+                                  fffc0390  fffc078f       400   4
+D_1
+                                  fffc0790  fffc08ae       11f   1
+D_2
+                                  fffc08b0  fffc08e9        3a   2
+D
+                                  fffc08ec  fffc0963        78   4
+P
+                                  fffc0964  fffc93bb      8a58   1
+PIntPRG
+                                  fffc93bc  fffc95a1       1e6   1
+W_1
+                                  fffc95a2  fffc95a9         8   1
+W_2
+                                  fffc95aa  fffc95eb        42   2
+W
+                                  fffc95ec  fffc95ec         0   4
+L
+                                  fffc95ec  fffc9644        59   4
+$ADDR_C_FFFFFF80
+                                  ffffff80  ffffff83         4   1
+$ADDR_C_FFFFFFA0
+                                  ffffffa0  ffffffaf        10   1
+FIXEDVECT
+                                  ffffffd0  ffffffff        30   4
